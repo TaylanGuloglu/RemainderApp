@@ -1,0 +1,99 @@
+:root{
+    --main-color:rgba(95, 39, 205,1.0);
+    --main-color:rgba(95, 39, 205,0.5);
+    --accent-color:rgba(255, 159, 67,1.0);
+    --accent-color:rgba(255, 159, 67,0.5);
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--accent-color));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title{
+    font-size: 5rem;
+}
+.header, .duty-form{
+    min-height: 10vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.btn-add-duty{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.btn-add-duty:hover{
+    color: wheat;
+    background-color: var(--accent-color);
+}
+
+.duty-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.duty-list{
+    list-style: none;
+    min-width: 40%;
+}
+.duty-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.3rem;
+    background-color:rgb(0, 255, 242);
+    transition: 1s ease-in-out;
+    
+}
+.duty-explanation{
+    flex:3;
+}
+.duty-btn{
+    background-color: var(--accent-color);
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+.duty-btn-deleted{
+    background-color: hotpink;
+    cursor: pointer;
+}
+.duty-btn-finished{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.duty-finished{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.far{
+    pointer-events: none;
+}
+
+.fas{
+    pointer-events: none;
+}
+
+.lost{
+    transform: scale(0);
+}
